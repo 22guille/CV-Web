@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <script type="text/javascript">
+        function CargarFoto(img, ancho, alto){
+          derecha=(screen.width-ancho)/2;
+          arriba=(screen.height-alto)/2;
+          string="toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width="+ancho+",height="+alto+",left="+derecha+",top="+arriba+"";
+          fin=window.open(img,"",string);
+        }
+        </script>
+
+        <title>Curriculum Vitae</title>
+    </head>
+    <body class="fondo" background="../img/menu.png">
+        <div id="contenedor">
+            <div id="izquierda" style="background-color:#10284a; height: 70px; font-size: x-large">
+                CURRICULUM VITAE
+            </div>
+            <div id="foto"> 
+                <a href="javascript:CargarFoto('../img/foto.jpg','380','380')">
+                    <img src="../img/foto.jpg" height="100%" style="border-radius: 50%">
+                </a>
+            </div>
+            <div id="derecha" style="background-color:#10284a; height: 70px; font-size: x-large">
+                GUILLERMO RUIZ GÓMEZ
+            </div>
+            <div id="izquierda" style="background-color:#006fba; height: 40px;">
+                Front-End Web Developer
+            </div>
+            <div id="derecha" style="background-color:#006fba; height: 40px;">
+                Movil: <a id="contacto" href="tel:669988107" style="color: white">669 98 81 07</a> &nbsp; &nbsp; E-mail: <a id="contacto" href="mailto:guiyermo_91@hotmail.com" style="color: white">guiyermo_91@hotmail.com</a>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="icono">
+                <a href="datos.html">
+                    <img src="../img/datos.png" title="Información personal" width="30%" style="float: left; margin-right: 50%">
+                </a>
+            </div>
+
+            <div id="icono">
+                <a href="formacion.html">
+                    <img src="../img/estudios.png" title="Formación" width="30%" style="float: right; margin-left: 50%">
+                </a>
+            </div>
+
+            <div id="icono">
+                <a href="conocimientos.html">
+                    <img src="../img/conocimientos.png" title="Conocimientos" width="30%" style="float: left; margin-right: 50%">
+                </a>
+            </div>
+
+            <div id="icono">
+                <a href="trabajo.html">
+                    <img src="../img/trabajo.png" title="Experiencia Laboral" width="30%" style="float: right; margin-left: 50%">
+                </a>
+            </div>
+
+            <div id="icono">
+                <a href="carta.html">
+                    <img src="../img/sobremi.png" title="Carta de presentación" width="30%" style="float: left; margin-right: 50%">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
